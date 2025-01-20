@@ -189,8 +189,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 - **Your Name**
 - **Email:** your.email@example.com
-- **LinkedIn:** [linkedin.com/in/yourprofile](https://www.linkedin.com/in/yourprofile/)
-- **GitHub:** [github.com/yourusername](https://github.com/yourusername)
+- **LinkedIn:** [linkedin](https://www.linkedin.com/in/saurabh-kumar-singh-b02b93278/)
+- **GitHub:** [github](https://github.com/saurabh23011/Welcome-to-the-Mental-Health-Support-Chat.git)
 
 ## 🙏 Acknowledgments
 
