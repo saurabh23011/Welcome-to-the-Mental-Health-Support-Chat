@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resources</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f0f8ff; }
+        h1 { color: #2E8B57; }
+        h2 { color: #3CB371; }
+        h3 { color: #4682B4; }
+        .resource-category { margin-bottom: 30px; }
+        .resource { margin-bottom: 10px; }
+        .medication { margin-bottom: 15px; }
+        a { text-decoration: none; color: #1E90FF; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 900px; margin: auto; }
+        ul { list-style-type: none; padding-left: 0; }
+        li { margin-bottom: 10px; }
+        .medication-details { margin-left: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Helpful Resources</h1>
+        
+        {% for category in resources %}
+            <div class="resource-category">
+                <h2>{{ category.category }}</h2>
+                {% if category.category != 'Common Medications' %}
+                    <ul>
+                        {% for resource in category.resources %}
+                            <li class="resource">
+                                <strong>{{ resource.name }}</strong><br>
+                                <span>{{ resource.description }}</span><br>
+                                <a href="{{ resource.link }}" target="_blank">Visit Website</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    {% for medication in category.resources %}
+                        <div class="medication">
+                            <h3>{{ medication.name }}</h3>
+                            <p>{{ medication.description }}</p>
+                            <ul>
+                                {% for detail in medication.details %}
+                                    <li>
+                                        <strong>{{ detail.name }}</strong>: {{ detail.description }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        {% endfor %}
+        
+        <a href="/">&#8592; Back to Home</a>
+    </div>
+</body>
+</html>

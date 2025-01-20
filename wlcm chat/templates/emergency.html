@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emergency Contacts</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #fff0f5; }
+        h1 { color: #DC143C; }
+        h2 { color: #FF4500; }
+        .contact-category { margin-bottom: 30px; }
+        .contact { margin-bottom: 10px; }
+        a { text-decoration: none; color: #FF6347; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 800px; margin: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Emergency Contacts</h1>
+        
+        {% for category, contacts in contacts.items() %}
+            <div class="contact-category">
+                <h2>{{ category }}</h2>
+                <ul>
+                    {% for contact in contacts %}
+                        <li class="contact">
+                            <strong>{{ contact.name }}</strong><br>
+                            <span>{{ contact.description }}</span><br>
+                            <a href="{{ contact.link }}" target="_blank">{{ contact.link }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+        
+        <a href="/">&#8592; Back to Home</a>
+    </div>
+</body>
+</html>
