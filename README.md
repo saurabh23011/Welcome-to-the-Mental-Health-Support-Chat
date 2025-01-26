@@ -188,7 +188,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 📫 Contact
 
 - **Your Name**
-- **Email:** your.email@example.com
+- **Email:** saurabhsingh802213@gmail.com
 - **LinkedIn:** [linkedin](https://www.linkedin.com/in/saurabh-kumar-singh-b02b93278/)
 - **GitHub:** [github](https://github.com/saurabh23011/Welcome-to-the-Mental-Health-Support-Chat.git)
 
@@ -213,12 +213,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-## 🎥 Demo
 
-*(If available, include a link to a live demo or a video demonstration.)*
-
-- **Live Demo:** [https://www.mindsupportapp.com](https://www.mindsupportapp.com)
-- **Video Demo:** [YouTube Link](https://www.youtube.com/watch?v=yourvideo)
 
 ---
 
